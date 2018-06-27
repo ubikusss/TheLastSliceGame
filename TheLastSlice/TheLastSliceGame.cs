@@ -366,6 +366,11 @@ namespace TheLastSlice
                 return;
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                
+            }
+
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
                 Exit();

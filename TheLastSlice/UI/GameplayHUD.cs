@@ -112,14 +112,17 @@ namespace TheLastSlice.UI
             spriteBatch.DrawString(Text, "Order", new Vector2(10, 20), Color.White);
             spriteBatch.DrawString(Text, string.Format("{0}", Math.Min(TheLastSliceGame.LevelManager.CurrentLevel.CompletedNumDeliveries + 1, TheLastSliceGame.LevelManager.CurrentLevel.TotalNumDeliveries)), new Vector2(80, 20), Color.White);
             spriteBatch.DrawString(Text, "Of", new Vector2(105, 20), Color.White);
-            if (TheLastSliceGame.LevelManager.CurrentLevelNum > 2)
-            {
-                spriteBatch.DrawString(Text, "99", new Vector2(135, 20), Color.White); // jk
-            }
-            else
-            {
+            
+            //NICE joke! :D
+            
+            //if (TheLastSliceGame.LevelManager.CurrentLevelNum > 2)
+            //{
+            //    spriteBatch.DrawString(Text, "99", new Vector2(135, 20), Color.White); // jk
+            //}
+            //else
+            //{
                 spriteBatch.DrawString(Text, TheLastSliceGame.LevelManager.CurrentLevel.TotalNumDeliveries.ToString(), new Vector2(135, 20), Color.White);
-            }
+            //}
 
             spriteBatch.Draw(HUDEmptySlot, new Vector2(175, 0), Color.White);
             spriteBatch.Draw(HUDEmptySlot, new Vector2(225, 0), Color.White);

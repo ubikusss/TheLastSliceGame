@@ -72,7 +72,7 @@ namespace TheLastSlice.Entities
             BoxSpeed = 100.0f;
             Inventory = new List<Pickup>();
             PizzaIngredients = new List<Ingredient>();
-            MaxGas = 646;
+            MaxGas = 1500; //was 646 - should be higher due to complexity of level 3 - set to 1500
             Gas = MaxGas;
             LowGasThreshold = 200;
             IsDead = false;
@@ -617,7 +617,8 @@ namespace TheLastSlice.Entities
                 {
                     if (pickup.PickupType == PickupType.GS)
                     {
-                        UpdateGas(200);
+                        //for easier gaming!!!
+                        UpdateGas(99999999);//was 200
                     }
                     else if (pickup.PickupType == PickupType.TC)
                     {

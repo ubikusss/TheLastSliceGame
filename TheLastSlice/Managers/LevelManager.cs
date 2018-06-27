@@ -20,7 +20,10 @@ namespace TheLastSlice.Managers
 
         public LevelManager()
         {
-            NumLevelsCompleted = 0;
+
+            //TO DO: add level choice in main menu
+
+            NumLevelsCompleted = 2;
             CurrentLevel = null;
             Levels = new List<Level>();
 
